@@ -23,5 +23,5 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
     List<CourseWithTNDto> findAllCoursesDtoWithTeacherName();
 
     Optional<Course> findCourseByCourseName(String courseName);
-
+    Optional<Course> findCourseByTeacherId(long teacherId);
 }
